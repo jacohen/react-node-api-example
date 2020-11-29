@@ -15,6 +15,13 @@
 "use strict";
 
 // [START gae_node_request_example]
+
+// firestore
+const admin = require('firebase-admin');
+admin.initializeApp();
+
+const db = admin.firestore();
+
 const express = require("express");
 // const cors = require("cors");
 const app = express();

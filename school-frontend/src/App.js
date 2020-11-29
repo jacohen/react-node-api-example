@@ -25,7 +25,8 @@ import Divider from "@material-ui/core/Divider";
 // }
 
 function App() {
-  const schoolEndpoint = "https://divya-school-api.uc.r.appspot.com/";
+  const schoolEndpoint = "https://us-central1-jack-school-api.cloudfunctions.net/schoolApi";
+
   const [school, setSchool] = React.useState([]);
 
   //Add new student form state
@@ -94,7 +95,7 @@ function App() {
       })}
       <Divider />
       {/* Add student form */}
-      <div style={{backgroundColor:"yellow"}}>
+      <div style={{backgroundColor:"AliceBlue"}}>
         <TextField
           label="Name"
           value={name}
